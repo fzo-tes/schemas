@@ -1,0 +1,162 @@
+{
+  "$id": "/schemas/product",
+  "title": "product",
+  "description": "product",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "no": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_reference_id": {
+      "type": "string"
+    },
+    "images": [],
+    "description": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "options": [],
+    "product_type": {
+      "type": "string"
+    },
+    "collections": [],
+    "collection": {
+      "type": "string"
+    },
+    "variants": [],
+    "availability": [],
+    "customer_profile_reference": {
+      "id": "",
+      "name": "",
+      "image": ""
+    },
+    "ecommerce": {
+      "template": "",
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "gtin": "",
+      "price_lowest": 0.0,
+      "price_highest": 0.0
+    }
+  }
+}
+
+class ProductPrice(ObjectSchema):
+    price_id: {
+  "type": "string"
+},
+    compare_at_price: {
+  "type": "number"
+},
+    amount: {
+  "type": "number"
+},
+    selling: {
+  "type": "number"
+},
+    purchasing: {
+  "type": "number"
+},
+    purchasing_2: {
+  "type": "number"
+},
+
+
+class ProductOptions(ObjectSchema):
+    option_id: {
+  "type": "string"
+},
+    name: {
+  "type": "string"
+},
+    position = 0
+    values = []
+
+
+class ProductImage(ObjectSchema):
+    image_id: {
+  "type": "string"
+},
+    image_type: {
+  "type": "string"
+},
+    position = 0
+    width = 0
+    height = 0
+    src: {
+  "type": "string"
+},
+    meta = {
+  "alt": "",
+  "title": "",
+  "description": "",
+},
+
+
+class ProductInventory(ObjectSchema):
+    inventory_id: {
+  "type": "string"
+},
+    management: {
+  "type": "string"
+},
+    policy: {
+  "type": "string"
+},
+    quantity: {
+  "type": "number"
+},
+    quantity_old: {
+  "type": "number"
+},
+    quantity_adjustment: {
+  "type": "number"
+},
+
+
+class ProductSku(ObjectSchema):
+    sku_id: {
+  "type": "string"
+},
+    produced_at: {
+  "type": "string"
+},
+    best_before: {
+  "type": "string"
+},
+    batch: {
+  "type": "string"
+},
+    serial: {
+  "type": "string"
+},
+    serial_number: {
+  "type": "string"
+},
+
+
+class ProductBatch:
+    batch_id: {
+  "type": "string"
+},
+    name: {
+  "type": "string"
+},
