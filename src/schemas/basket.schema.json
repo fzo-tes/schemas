@@ -1,0 +1,31 @@
+{
+  "$id": "/schemas/basket",
+  "title": "basket",
+  "description": "basket",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "reference_id": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "basket_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "positions": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/basket_position"
+      }
+    },
+    "is_archived": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$id": "/schemas/connection",
+  "title": "connection",
+  "description": "connection",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "service": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}

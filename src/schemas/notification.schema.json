@@ -1,0 +1,41 @@
+{
+  "$id": "/schemas/notification",
+  "title": "notification",
+  "description": "notification",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "reference_id": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "customer_user_id": {
+      "type": "string"
+    },
+    "customer_user_profile_id": {
+      "type": "string"
+    },
+    "customer_user_company_id": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "has_notified": {
+      "type": "boolean",
+      "default": false
+    },
+    "has_read": {
+      "type": "boolean",
+      "default": false
+    },
+    "notification_type": {
+      "type": "string"
+    }
+  }
+}

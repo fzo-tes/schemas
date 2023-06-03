@@ -1,0 +1,18 @@
+{
+  "$id": "/schemas/blog",
+  "title": "blog",
+  "description": "blog",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$id": "/schemas/setting_user",
+  "title": "setting_user",
+  "description": "setting_user",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "mainnav_pinned": {
+      "type": "boolean",
+      "default": false
+    },
+    "fulfillment_scanstation_id": {
+      "type": "string"
+    },
+    "user_roles": []
+  }
+}

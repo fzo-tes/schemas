@@ -1,0 +1,16 @@
+{
+  "$id": "/schemas/user_role",
+  "title": "user_role",
+  "description": "user_role",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "apps": []
+  }
+}

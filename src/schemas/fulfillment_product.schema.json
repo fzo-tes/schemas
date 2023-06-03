@@ -1,0 +1,24 @@
+{
+  "$id": "/schemas/fulfillment_product",
+  "title": "fulfillment_product",
+  "description": "fulfillment_product",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "shipping_service_provider_code": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string"
+    },
+    "contract_number": {
+      "type": "string"
+    },
+    "label_type": {
+      "type": "string"
+    },
+    "fulfillment_shipping_code": {
+      "type": "string"
+    }
+  }
+}

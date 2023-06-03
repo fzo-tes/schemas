@@ -1,0 +1,54 @@
+{
+  "$id": "/schemas/image",
+  "title": "image",
+  "description": "image",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "image_type": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "meta": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "alt": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "used_in": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "reference_type": {
+            "type": "string"
+          },
+          "reference_id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

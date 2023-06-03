@@ -1,0 +1,21 @@
+{
+  "$id": "/schemas/customer_company",
+  "title": "customer_company",
+  "description": "customer_company",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "no": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

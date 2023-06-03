@@ -1,0 +1,19 @@
+{
+  "$id": "/schemas/setting_visitor",
+  "title": "setting_visitor",
+  "description": "setting_visitor",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "reference_id": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "show_price_net": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

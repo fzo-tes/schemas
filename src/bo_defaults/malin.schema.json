@@ -1,0 +1,43 @@
+{
+  "$id": "/bo_defaults/malin",
+  "title": "malin",
+  "description": "Malin",
+  "type": "object",
+  "properties": {
+    "source_reference_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date-time"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "lastupdate_at": {
+      "type": "date-time"
+    },
+    "lastupdate_by": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "is_deleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_archived": {
+      "type": "boolean",
+      "default": false
+    },
+    "customfields": {
+      "type": "object"
+    },
+    "tags": {
+      "type": "array"
+    }
+  }
+}

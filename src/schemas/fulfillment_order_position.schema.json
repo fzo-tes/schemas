@@ -1,0 +1,61 @@
+{
+  "$id": "/schemas/fulfillment_order_position",
+  "title": "fulfillment_order_position",
+  "description": "fulfillment_order_position",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "position_id": {
+      "type": "string"
+    },
+    "parent_position_id": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "variant_id": {
+      "type": "string"
+    },
+    "sku_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "scan_amount": {
+      "type": "integer"
+    },
+    "scanned": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "required_shipment": {
+      "type": "boolean",
+      "default": true
+    },
+    "customs": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "country_code_origin": {
+          "type": "string"
+        },
+        "customs_tariff_number": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

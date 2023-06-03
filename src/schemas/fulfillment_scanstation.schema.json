@@ -1,0 +1,24 @@
+{
+  "$id": "/schemas/fulfillment_scanstation",
+  "title": "fulfillment_scanstation",
+  "description": "fulfillment_scanstation",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "printers": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/fulfillment_scanstation_printer"
+      }
+    }
+  }
+}

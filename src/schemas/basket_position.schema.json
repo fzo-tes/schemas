@@ -1,0 +1,59 @@
+{
+  "$id": "/schemas/basket_position",
+  "title": "basket_position",
+  "description": "basket_position",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "position_id": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "price_per_unit": {
+      "type": "number"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "variant_id": {
+      "type": "string"
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "image_url": {
+          "type": "string"
+        },
+        "customfields": {
+          "type": "object"
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "image_url": {
+          "type": "string"
+        },
+        "required_shipment": {
+          "type": "boolean",
+          "default": false
+        },
+        "customfields": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

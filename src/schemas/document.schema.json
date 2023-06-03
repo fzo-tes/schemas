@@ -1,0 +1,21 @@
+{
+  "$id": "/schemas/document",
+  "title": "document",
+  "description": "document",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "document_name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

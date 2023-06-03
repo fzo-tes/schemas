@@ -1,0 +1,15 @@
+{
+  "$id": "/schemas/blog_article_comment",
+  "title": "blog_article_comment",
+  "description": "blog_article_comment",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "blog_article_id": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}

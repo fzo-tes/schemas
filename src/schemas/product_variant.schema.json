@@ -1,0 +1,70 @@
+{
+  "$id": "/schemas/product_variant",
+  "title": "product_variant",
+  "description": "product_variant",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "variant_id": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_reference_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "weight_unit": {
+      "type": "string"
+    },
+    "fulfillment_service": {
+      "type": "string"
+    },
+    "requires_shipping": {
+      "type": "boolean",
+      "default": false
+    },
+    "delivery_time": {
+      "type": "string"
+    },
+    "position": 0,
+    "images": [],
+    "inventories": [],
+    "option": {},
+    "price_settings": {
+      "price_type": "single",
+      "use_price_list": false,
+      "linked_price_list": ""
+    },
+    "prices": [],
+    "tax": {
+      "tax_id": "",
+      "taxable": false,
+      "code": "",
+      "value": 0.0
+    },
+    "vendor": {
+      "name": "",
+      "code": "",
+      "reference_id": ""
+    },
+    "customs": {
+      "country_code_origin": "",
+      "customs_tariff_number": "",
+    },
+    "skus": [],
+    "batches": []
+  }
+}

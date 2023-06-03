@@ -1,0 +1,12 @@
+{
+  "$id": "/schemas/session",
+  "title": "session",
+  "description": "session",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "code": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$id": "/schemas/customer_user",
+  "title": "customer_user",
+  "description": "customer_user",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "customer_company_id": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/customer_profile"
+      }
+    },
+    "last_profile_id": {
+      "type": "string"
+    },
+    "language_code": {
+      "type": "string"
+    },
+    "is_admin": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_test": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

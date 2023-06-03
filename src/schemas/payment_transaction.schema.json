@@ -1,0 +1,30 @@
+{
+  "$id": "/schemas/payment_transaction",
+  "title": "payment_transaction",
+  "description": "payment_transaction",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "payment_provider": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "reference_id": {
+      "type": "string"
+    },
+    "payment_transaction_id": {
+      "type": "string"
+    },
+    "payment_transaction_reference": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

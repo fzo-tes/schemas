@@ -1,0 +1,34 @@
+{
+  "$id": "/schemas/document_printable",
+  "title": "document_printable",
+  "description": "document_printable",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "printer": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "client_target": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "reference_id": {
+      "type": "string"
+    },
+    "printed": {
+      "type": "boolean",
+      "default": false
+    },
+    "printed_at": {
+      "type": "string"
+    },
+    "delete_at": {
+      "type": "string"
+    }
+  }
+}

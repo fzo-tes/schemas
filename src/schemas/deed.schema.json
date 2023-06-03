@@ -1,0 +1,33 @@
+{
+  "$id": "/schemas/deed",
+  "title": "deed",
+  "description": "deed",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "org_path": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "reference_id": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

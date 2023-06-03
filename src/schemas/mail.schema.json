@@ -1,0 +1,80 @@
+{
+  "$id": "/schemas/mail",
+  "title": "mail",
+  "description": "mail",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "mail_template_id": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "reference_id": {
+      "type": "string"
+    },
+    "sender": {
+      "type": "string"
+    },
+    "recipients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recipients_copy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recipients_blindcopy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reply_to": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "attachments_static": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mail_delivery": {
+      "type": "object",
+      "properties": {
+        "mail_service": {
+          "type": "string"
+        },
+        "mail_id": {
+          "type": "string"
+        },
+        "mail_status": {
+          "type": "string"
+        },
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

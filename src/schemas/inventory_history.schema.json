@@ -1,0 +1,30 @@
+{
+  "$id": "/schemas/inventory_history",
+  "title": "inventory_history",
+  "description": "inventory_history",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "inventory_id": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "product_variant_id": {
+      "type": "string"
+    },
+    "stock_type": {
+      "type": "string"
+    },
+    "reference_type": {
+      "type": "string"
+    },
+    "reference_id": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$id": "/schemas/customer_profile",
+  "title": "customer_profile",
+  "description": "customer_profile",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "database": {
+      "type": "string"
+    },
+    "customer_company_id": {
+      "type": "string"
+    },
+    "country_code": {
+      "type": "string"
+    },
+    "addresses": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/address"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "description_short": {
+      "type": "string"
+    },
+    "description_search": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "handler": {
+      "type": "string"
+    },
+    "image_main": {
+      "type": "string"
+    },
+    "image_search": {
+      "type": "string"
+    },
+    "image_logo": {
+      "type": "string"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

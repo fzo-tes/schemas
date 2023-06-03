@@ -1,0 +1,15 @@
+{
+  "$id": "/schemas/inventory",
+  "title": "inventory",
+  "description": "inventory",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

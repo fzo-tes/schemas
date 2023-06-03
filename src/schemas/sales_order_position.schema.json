@@ -1,0 +1,93 @@
+{
+  "$id": "/schemas/sales_order_position",
+  "title": "sales_order_position",
+  "description": "sales_order_position",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "position_id": {
+      "type": "string"
+    },
+    "parent_position_id": {
+      "type": "string"
+    },
+    "parent_linked_fields": [],
+    "position_type": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "grams": {
+      "type": "number"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "weight_unit": {
+      "type": "string"
+    },
+    "required_shipment": {
+      "type": "boolean",
+      "default": false
+    },
+    "product": {
+      "id": "",
+      "no": "",
+      "name": "",
+      "image_url": "",
+      "customfields": {}
+    },
+    "variant": {
+      "id": "",
+      "no": "",
+      "name": "",
+      "option": {},
+      "image_url": "",
+      "customfields": {}
+    },
+    "sku": {
+      "id": "",
+      "no": "",
+      "name": ""
+    },
+    "tax": {
+      "tax_id": "",
+      "code": "",
+      "value": ""
+    },
+    "discount": {
+      "discount_id": "",
+      "code": "",
+      "type": "",
+      "value": 0.0
+    },
+    "price": {
+      "purchasing": 0.0,
+      "selling": 0.0,
+      "retail": 0.0,
+      "discount": 0.0,
+      "shipping": 0.0,
+      "vat": 0.0,
+      "total__vat": 0.0,
+      "total__gross": 0.0,
+      "total__net": 0.0
+    },
+    "source_reference_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "customs": {
+      "country_code_origin": "",
+      "customs_tariff_number": ""
+    }
+  }
+}

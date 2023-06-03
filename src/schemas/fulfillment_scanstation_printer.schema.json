@@ -1,0 +1,27 @@
+{
+  "$id": "/schemas/fulfillment_scanstation_printer",
+  "title": "fulfillment_scanstation_printer",
+  "description": "fulfillment_scanstation_printer",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "label": {
+      "type": "string"
+    },
+    "label_small": {
+      "type": "string"
+    },
+    "invoice": {
+      "type": "string"
+    },
+    "deliverynote": {
+      "type": "string"
+    },
+    "exportdocument": {
+      "type": "string"
+    },
+    "label_address": {
+      "type": "string"
+    }
+  }
+}

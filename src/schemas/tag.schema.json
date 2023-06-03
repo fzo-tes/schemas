@@ -1,0 +1,15 @@
+{
+  "$id": "/schemas/tag",
+  "title": "tag",
+  "description": "tag",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

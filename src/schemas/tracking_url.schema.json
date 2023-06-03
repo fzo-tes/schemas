@@ -1,0 +1,27 @@
+{
+  "$id": "/schemas/tracking_url",
+  "title": "tracking_url",
+  "description": "tracking_url",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "prefix": {
+      "type": "string"
+    },
+    "short": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "subcode": {
+      "type": "string"
+    },
+    "ref": {
+      "type": "string"
+    }
+  }
+}

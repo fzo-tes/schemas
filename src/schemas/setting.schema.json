@@ -1,0 +1,15 @@
+{
+  "$id": "/schemas/setting",
+  "title": "setting",
+  "description": "setting",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$id": "/schemas/price",
+  "title": "price",
+  "description": "price",
+  "required": [],
+  "unique": [],
+  "properties": {
+    "group_code": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "purchase_price": {
+      "type": "number"
+    },
+    "purchase_price_2": {
+      "type": "number"
+    }
+  }
+}
