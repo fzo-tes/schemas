@@ -2,6 +2,7 @@
   "$id": "/schemas/notification",
   "title": "notification",
   "description": "notification",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

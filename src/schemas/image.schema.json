@@ -2,6 +2,7 @@
   "$id": "/schemas/image",
   "title": "image",
   "description": "image",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

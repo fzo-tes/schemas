@@ -2,6 +2,7 @@
   "$id": "/schemas/fulfillment_scanstation_printer",
   "title": "fulfillment_scanstation_printer",
   "description": "fulfillment_scanstation_printer",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

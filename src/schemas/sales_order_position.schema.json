@@ -2,6 +2,7 @@
   "$id": "/schemas/sales_order_position",
   "title": "sales_order_position",
   "description": "sales_order_position",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {
@@ -11,7 +12,12 @@
     "parent_position_id": {
       "type": "string"
     },
-    "parent_linked_fields": [],
+    "parent_linked_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "position_type": {
       "type": "string"
     },
@@ -38,46 +44,121 @@
       "default": false
     },
     "product": {
-      "id": "",
-      "no": "",
-      "name": "",
-      "image_url": "",
-      "customfields": {}
+      "id": {
+        "type": "string"
+      },
+      "no": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "image_url": {
+        "type": "string"
+      },
+      "customfields": {
+        "type": "object"
+      }
     },
     "variant": {
-      "id": "",
-      "no": "",
-      "name": "",
-      "option": {},
-      "image_url": "",
-      "customfields": {}
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "no": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "option": {
+          "type": "object"
+        },
+        "image_url": {
+          "type": "string"
+        },
+        "customfields": {
+          "type": "object"
+        }
+      }
     },
     "sku": {
-      "id": "",
-      "no": "",
-      "name": ""
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "no": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
     },
     "tax": {
-      "tax_id": "",
-      "code": "",
-      "value": ""
+      "type": "object",
+      "properties": {
+        "tax_id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
     },
     "discount": {
-      "discount_id": "",
-      "code": "",
-      "type": "",
-      "value": 0.0
+      "type": "object",
+      "properties": {
+        "discount_id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
     },
     "price": {
-      "purchasing": 0.0,
-      "selling": 0.0,
-      "retail": 0.0,
-      "discount": 0.0,
-      "shipping": 0.0,
-      "vat": 0.0,
-      "total__vat": 0.0,
-      "total__gross": 0.0,
-      "total__net": 0.0
+      "type": "object",
+      "properties": {
+        "purchasing": {
+          "type": "number"
+        },
+        "selling": {
+          "type": "number"
+        },
+        "retail": {
+          "type": "number"
+        },
+        "discount": {
+          "type": "number"
+        },
+        "shipping": {
+          "type": "number"
+        },
+        "vat": {
+          "type": "number"
+        },
+        "total__vat": {
+          "type": "number"
+        },
+        "total__gross": {
+          "type": "number"
+        },
+        "total__net": {
+          "type": "number"
+        }
+      }
     },
     "source_reference_id": {
       "type": "string"
@@ -86,8 +167,15 @@
       "type": "string"
     },
     "customs": {
-      "country_code_origin": "",
-      "customs_tariff_number": ""
+      "type": "object",
+      "properties": {
+        "country_code_origin": {
+          "type": "string"
+        },
+        "customs_tariff_number": {
+          "type": "string"
+        }
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
   "$id": "/schemas/setting_visitor",
   "title": "setting_visitor",
   "description": "setting_visitor",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

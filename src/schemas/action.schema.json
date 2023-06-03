@@ -2,6 +2,7 @@
   "$id": "/schemas/action",
   "title": "action",
   "description": "Action",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

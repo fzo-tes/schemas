@@ -2,6 +2,7 @@
   "$id": "/schemas/fulfillment_scanstation",
   "title": "fulfillment_scanstation",
   "description": "fulfillment_scanstation",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

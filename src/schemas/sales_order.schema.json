@@ -2,8 +2,73 @@
   "$id": "/schemas/sales_order",
   "title": "sales_order",
   "description": "sales_order",
+  "type": "object",
   "required": [],
   "unique": [],
+  "$defs": {
+    "customer_information": {
+      "type": "object",
+      "properties": {
+        "customer_company_id": {
+          "type": "string"
+        },
+        "customer_profile_id": {
+          "type": "string"
+        },
+        "customer_user_id": {
+          "type": "string"
+        },
+        "customer_company": {
+          "type": "object",
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "customer_profile": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "image_logo": {
+              "type": "string"
+            },
+            "customfields": {
+              "type": "object"
+            }
+          }
+        },
+        "customer_user": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "customfields": {
+              "type": "object"
+            }
+          }
+        },
+        "language_code": {
+          "type": "string"
+        },
+        "customfields": {
+          "type": "object"
+        }
+      }
+    }
+  },
   "properties": {
     "no": {
       "type": "string"
@@ -24,185 +89,146 @@
       "type": "string"
     },
     "currency": {
-      "currency_id": "",
-      "code": "",
-      "exchangerate": 0.0
+      "type": "object",
+      "properties": {
+        "currency_id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "exchangerate": {
+          "type": "number"
+        }
+      }
     },
     "buyer": {
-      "customer_company_id": "",
-      "customer_profile_id": "",
-      "customer_user_id": "",
-      "customer_company": {
-        "no": "",
-        "name": ""
-      },
-      "customer_profile": {
-        "name": "",
-        "image_logo": "",
-        "customfields": {}
-      },
-      "customer_user": {
-        "email": "",
-        "firstname": "",
-        "name": "",
-        "customfields": {}
-      },
-      "language_code": "",
-      "customfields": {}
+      "type": "object",
+      "$ref": "#/$defs/customer_information"
     },
     "seller": {
-      "customer_company_id": "",
-      "customer_profile_id": "",
-      "customer_user_id": "",
-      "customer_company": {
-        "no": "",
-        "name": ""
-      },
-      "customer_profile": {
-        "name": "",
-        "image_logo": "",
-        "customfields": {}
-      },
-      "customer_user": {
-        "email": "",
-        "firstname": "",
-        "name": "",
-        "customfields": {}
-      },
-      "language_code": "",
-      "customfields": {}
+      "type": "object",
+      "$ref": "#/$defs/customer_information"
     },
     "merchant": {
-      "customer_company_id": "",
-      "customer_profile_id": "",
-      "customer_user_id": "",
-      "customer_company": {
-        "no": "",
-        "name": ""
-      },
-      "customer_profile": {
-        "name": "",
-        "image_logo": "",
-        "customfields": {}
-      },
-      "customer_user": {
-        "email": "",
-        "firstname": "",
-        "name": "",
-        "customfields": {}
-      },
-      "language_code": "",
-      "customfields": {}
+      "type": "object",
+      "$ref": "#/$defs/customer_information"
     },
     "merchant_address": {
-      "address_id": "",
-      "address_type": "",
-      "name": "",
-      "firstname": "",
-      "title": "",
-      "additional_name": "",
-      "company": "",
-      "street": "",
-      "street_additional": "",
-      "street_number": "",
-      "state": "",
-      "city": "",
-      "zip": "",
-      "country_code": "",
-      "phone": "",
-      "email": "",
-      "district": "",
-      "care_of_name": "",
-      "floor_number": "",
-      "room_number": "",
-      "note": "",
-      "delivery_server_account_no": "",
-      "delivery_server_station_no": ""
+      "type": "object",
+      "$ref": "/schemas/address"
     },
     "shipping_address": {
-      "address_id": "",
-      "address_type": "",
-      "name": "",
-      "firstname": "",
-      "title": "",
-      "additional_name": "",
-      "company": "",
-      "street": "",
-      "street_additional": "",
-      "street_number": "",
-      "state": "",
-      "city": "",
-      "zip": "",
-      "country_code": "",
-      "phone": "",
-      "email": "",
-      "district": "",
-      "care_of_name": "",
-      "floor_number": "",
-      "room_number": "",
-      "note": "",
-      "delivery_server_account_no": "",
-      "delivery_server_station_no": ""
+      "type": "object",
+      "$ref": "/schemas/address"
     },
     "invoice_address": {
-      "address_id": "",
-      "address_type": "",
-      "name": "",
-      "firstname": "",
-      "title": "",
-      "additional_name": "",
-      "company": "",
-      "street": "",
-      "street_additional": "",
-      "street_number": "",
-      "state": "",
-      "city": "",
-      "zip": "",
-      "country_code": "",
-      "phone": "",
-      "email": "",
-      "district": "",
-      "care_of_name": "",
-      "floor_number": "",
-      "room_number": "",
-      "note": "",
-      "delivery_server_account_no": "",
-      "delivery_server_station_no": ""
+      "type": "object",
+      "$ref": "/schemas/address"
     },
     "payment": {
-      "payment_id": "",
-      "name": "",
-      "provider_code": "",
-      "reference_id": "",
-      "reference_token": "",
-      "reference_payerid": "",
-      "reference_status": "",
-      "reference_field1": "",
-      "reference_field2": "",
-      "reference_field3": ""
+      "type": "object",
+      "properties": {
+        "payment_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "provider_code": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string"
+        },
+        "reference_token": {
+          "type": "string"
+        },
+        "reference_payerid": {
+          "type": "string"
+        },
+        "reference_status": {
+          "type": "string"
+        },
+        "reference_field1": {
+          "type": "string"
+        },
+        "reference_field2": {
+          "type": "string"
+        },
+        "reference_field3": {
+          "type": "string"
+        }
+      }
     },
     "shipping": {
-      "supplier_id": "",
-      "code": "",
-      "name": ""
+      "type": "object",
+      "properties": {
+        "supplier_id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
     },
-    "positions": [],
+    "positions": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/sales_order_position"
+      }
+    },
     "discount": {
-      "discount_id": "",
-      "code": "",
-      "type": "",
-      "value": 0.0
+      "type": "object",
+      "properties": {
+        "discount_id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
     },
     "price": {
-      "purchasing": 0.0,
-      "selling": 0.0,
-      "retail": 0.0,
-      "discount": 0.0,
-      "shipping": 0.0,
-      "vat": 0.0,
-      "total__vat": 0.0,
-      "total__gross": 0.0,
-      "total__net": 0.0
+      "type": "object",
+      "properties": {
+        "purchasing": {
+          "type": "number"
+        },
+        "selling": {
+          "type": "number"
+        },
+        "retail": {
+          "type": "number"
+        },
+        "discount": {
+          "type": "number"
+        },
+        "shipping": {
+          "type": "number"
+        },
+        "vat": {
+          "type": "number"
+        },
+        "total__vat": {
+          "type": "number"
+        },
+        "total__gross": {
+          "type": "number"
+        },
+        "total__net": {
+          "type": "number"
+        }
+      }
     },
     "is_test": {
       "type": "boolean",
@@ -213,14 +239,32 @@
       "default": false
     },
     "packing_material": {
-      "package_id": "",
-      "weight": 0.0,
-      "packing_material_type": ""
+      "type": "object",
+      "properties": {
+        "package_id": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number"
+        },
+        "packing_material_type": {
+          "type": "string"
+        }
+      }
     },
     "customs": {
-      "invoice_no": "",
-      "description": "",
-      "place_of_commital": ""
+      "type": "object",
+      "properties": {
+        "invoice_no": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "place_of_commital": {
+          "type": "string"
+        }
+      }
     }
   }
 }

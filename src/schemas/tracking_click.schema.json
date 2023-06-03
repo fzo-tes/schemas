@@ -2,6 +2,7 @@
   "$id": "/schemas/tracking_click",
   "title": "tracking_click",
   "description": "tracking_click",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

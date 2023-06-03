@@ -2,6 +2,7 @@
   "$id": "/schemas/user_role",
   "title": "user_role",
   "description": "user_role",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {
@@ -11,6 +12,11 @@
     "status": {
       "type": "string"
     },
-    "apps": []
+    "apps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   }
 }

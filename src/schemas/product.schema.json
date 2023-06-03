@@ -2,6 +2,7 @@
   "$id": "/schemas/product",
   "title": "product",
   "description": "product",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

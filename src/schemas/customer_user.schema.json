@@ -2,6 +2,7 @@
   "$id": "/schemas/customer_user",
   "title": "customer_user",
   "description": "customer_user",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

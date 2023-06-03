@@ -2,6 +2,7 @@
   "$id": "/schemas/session",
   "title": "session",
   "description": "session",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

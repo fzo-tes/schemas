@@ -2,6 +2,7 @@
   "$id": "/schemas/inventory",
   "title": "inventory",
   "description": "inventory",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

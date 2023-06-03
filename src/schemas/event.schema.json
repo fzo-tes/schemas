@@ -2,6 +2,7 @@
   "$id": "/schemas/event",
   "title": "event",
   "description": "event",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

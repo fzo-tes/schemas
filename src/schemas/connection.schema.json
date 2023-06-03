@@ -2,6 +2,7 @@
   "$id": "/schemas/connection",
   "title": "connection",
   "description": "connection",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

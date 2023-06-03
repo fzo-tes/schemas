@@ -2,6 +2,7 @@
   "$id": "/schemas/setting",
   "title": "setting",
   "description": "setting",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

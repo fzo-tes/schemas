@@ -2,6 +2,7 @@
   "$id": "/schemas/payment_transaction",
   "title": "payment_transaction",
   "description": "payment_transaction",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

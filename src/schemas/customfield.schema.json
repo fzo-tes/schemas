@@ -2,6 +2,7 @@
   "$id": "/schemas/customfield",
   "title": "customfield",
   "description": "customfield",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

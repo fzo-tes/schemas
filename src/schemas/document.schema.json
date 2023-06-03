@@ -2,6 +2,7 @@
   "$id": "/schemas/document",
   "title": "document",
   "description": "document",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

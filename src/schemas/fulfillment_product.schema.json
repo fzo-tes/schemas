@@ -2,6 +2,7 @@
   "$id": "/schemas/fulfillment_product",
   "title": "fulfillment_product",
   "description": "fulfillment_product",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

@@ -2,6 +2,7 @@
   "$id": "/schemas/deed",
   "title": "deed",
   "description": "deed",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

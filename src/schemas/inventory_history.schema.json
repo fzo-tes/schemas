@@ -2,6 +2,7 @@
   "$id": "/schemas/inventory_history",
   "title": "inventory_history",
   "description": "inventory_history",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

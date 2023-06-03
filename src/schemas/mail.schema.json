@@ -2,6 +2,7 @@
   "$id": "/schemas/mail",
   "title": "mail",
   "description": "mail",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

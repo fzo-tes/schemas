@@ -2,6 +2,7 @@
   "$id": "/schemas/mail_template",
   "title": "mail_template",
   "description": "mail_template",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

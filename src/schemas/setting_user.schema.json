@@ -2,6 +2,7 @@
   "$id": "/schemas/setting_user",
   "title": "setting_user",
   "description": "setting_user",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {
@@ -15,6 +16,11 @@
     "fulfillment_scanstation_id": {
       "type": "string"
     },
-    "user_roles": []
+    "user_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   }
 }

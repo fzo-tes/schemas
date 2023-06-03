@@ -2,6 +2,7 @@
   "$id": "/schemas/address",
   "title": "address",
   "description": "address",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

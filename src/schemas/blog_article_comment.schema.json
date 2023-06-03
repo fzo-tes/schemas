@@ -2,6 +2,7 @@
   "$id": "/schemas/blog_article_comment",
   "title": "blog_article_comment",
   "description": "blog_article_comment",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

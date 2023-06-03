@@ -2,6 +2,7 @@
   "$id": "/schemas/tag",
   "title": "tag",
   "description": "tag",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

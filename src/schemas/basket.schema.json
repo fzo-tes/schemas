@@ -2,6 +2,7 @@
   "$id": "/schemas/basket",
   "title": "basket",
   "description": "basket",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

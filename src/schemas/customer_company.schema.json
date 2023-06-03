@@ -2,6 +2,7 @@
   "$id": "/schemas/customer_company",
   "title": "customer_company",
   "description": "customer_company",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

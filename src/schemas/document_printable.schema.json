@@ -2,6 +2,7 @@
   "$id": "/schemas/document_printable",
   "title": "document_printable",
   "description": "document_printable",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

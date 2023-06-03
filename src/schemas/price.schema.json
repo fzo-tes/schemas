@@ -2,6 +2,7 @@
   "$id": "/schemas/price",
   "title": "price",
   "description": "price",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

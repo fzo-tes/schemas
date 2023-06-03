@@ -2,6 +2,7 @@
   "$id": "/schemas/fulfillment_order",
   "title": "fulfillment_order",
   "description": "fulfillment_order",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {

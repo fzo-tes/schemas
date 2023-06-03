@@ -2,6 +2,7 @@
   "$id": "/schemas/product_variant",
   "title": "product_variant",
   "description": "product_variant",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {
@@ -39,7 +40,9 @@
     "delivery_time": {
       "type": "string"
     },
-    "position": 0,
+    "position": {
+      "type": "number"
+    },
     "images": [],
     "inventories": [],
     "option": {},
@@ -62,7 +65,7 @@
     },
     "customs": {
       "country_code_origin": "",
-      "customs_tariff_number": "",
+      "customs_tariff_number": ""
     },
     "skus": [],
     "batches": []

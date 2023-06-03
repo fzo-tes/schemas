@@ -2,6 +2,7 @@
   "$id": "/schemas/blog_article",
   "title": "blog_article",
   "description": "blog_article",
+  "type": "object",
   "required": [],
   "unique": [],
   "properties": {
