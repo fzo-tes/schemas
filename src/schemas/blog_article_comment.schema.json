@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
   "$id": "/schemas/blog_article_comment",
   "title": "blog_article_comment",
   "description": "blog_article_comment",

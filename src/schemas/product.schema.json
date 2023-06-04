@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
   "$id": "/schemas/product",
   "title": "product",
   "description": "product",
@@ -24,140 +25,102 @@
     "source_reference_id": {
       "type": "string"
     },
-    "images": [],
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/image"
+      }
+    },
     "description": {
       "type": "string"
     },
     "short_description": {
       "type": "string"
     },
-    "options": [],
+    "options": {
+      "types": "array",
+      "items": {
+        "properties": {
+          "option_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "position": {
+            "type": "number"
+          },
+          "values": {
+            "types": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
     "product_type": {
       "type": "string"
     },
-    "collections": [],
+    "collections": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/image"
+      }
+    },
     "collection": {
       "type": "string"
     },
-    "variants": [],
-    "availability": [],
+    "variants": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/product_variant"
+      }
+    },
     "customer_profile_reference": {
-      "id": "",
-      "name": "",
-      "image": ""
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
     },
     "ecommerce": {
-      "template": "",
-      "meta": {
-        "title": "",
-        "description": "",
-        "keywords": ""
-      },
-      "gtin": "",
-      "price_lowest": 0.0,
-      "price_highest": 0.0
+      "type": "object",
+      "properties": {
+        "template": {
+          "type": "string"
+        },
+        "gtin": {
+          "type": "string"
+        },
+        "price_lowest": {
+          "type": "number"
+        },
+        "price_highest": {
+          "type": "number"
+        },
+        "meta": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "string"
+            }
+          }
+        }
+      }
     }
   }
 }
-
-class ProductPrice(ObjectSchema):
-    price_id: {
-  "type": "string"
-},
-    compare_at_price: {
-  "type": "number"
-},
-    amount: {
-  "type": "number"
-},
-    selling: {
-  "type": "number"
-},
-    purchasing: {
-  "type": "number"
-},
-    purchasing_2: {
-  "type": "number"
-},
-
-
-class ProductOptions(ObjectSchema):
-    option_id: {
-  "type": "string"
-},
-    name: {
-  "type": "string"
-},
-    position = 0
-    values = []
-
-
-class ProductImage(ObjectSchema):
-    image_id: {
-  "type": "string"
-},
-    image_type: {
-  "type": "string"
-},
-    position = 0
-    width = 0
-    height = 0
-    src: {
-  "type": "string"
-},
-    meta = {
-  "alt": "",
-  "title": "",
-  "description": "",
-},
-
-
-class ProductInventory(ObjectSchema):
-    inventory_id: {
-  "type": "string"
-},
-    management: {
-  "type": "string"
-},
-    policy: {
-  "type": "string"
-},
-    quantity: {
-  "type": "number"
-},
-    quantity_old: {
-  "type": "number"
-},
-    quantity_adjustment: {
-  "type": "number"
-},
-
-
-class ProductSku(ObjectSchema):
-    sku_id: {
-  "type": "string"
-},
-    produced_at: {
-  "type": "string"
-},
-    best_before: {
-  "type": "string"
-},
-    batch: {
-  "type": "string"
-},
-    serial: {
-  "type": "string"
-},
-    serial_number: {
-  "type": "string"
-},
-
-
-class ProductBatch:
-    batch_id: {
-  "type": "string"
-},
-    name: {
-  "type": "string"
-},

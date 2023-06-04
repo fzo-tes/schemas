@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
   "$id": "/schemas/price",
   "title": "price",
   "description": "price",
@@ -9,13 +10,19 @@
     "group_code": {
       "type": "string"
     },
+    "compare_at_price": {
+      "type": "number"
+    },
     "amount": {
       "type": "number"
     },
-    "purchase_price": {
+    "selling": {
       "type": "number"
     },
-    "purchase_price_2": {
+    "purchasing": {
+      "type": "number"
+    },
+    "purchasing_2": {
       "type": "number"
     }
   }
