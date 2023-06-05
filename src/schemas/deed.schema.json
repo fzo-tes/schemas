@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/deed",
+  "$id": "https://schema.tes4a.org/schemas/deed",
   "title": "deed",
   "description": "deed",
   "type": "object",

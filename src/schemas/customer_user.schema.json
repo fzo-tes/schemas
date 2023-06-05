@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/customer_user",
+  "$id": "https://schema.tes4a.org/schemas/customer_user",
   "title": "customer_user",
   "description": "customer_user",
   "type": "object",
@@ -28,7 +28,7 @@
     "profiles": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/customer_profile"
+        "$ref": "https://schema.tes4a.org/schemas/customer_profile"
       }
     },
     "last_profile_id": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/tag",
+  "$id": "https://schema.tes4a.org/schemas/tag",
   "title": "tag",
   "description": "tag",
   "type": "object",

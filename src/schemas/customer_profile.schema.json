@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/customer_profile",
+  "$id": "https://schema.tes4a.org/schemas/customer_profile",
   "title": "customer_profile",
   "description": "customer_profile",
   "type": "object",
@@ -28,7 +28,7 @@
     "addresses": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/address"
+        "$ref": "https://schema.tes4a.org/schemas/address"
       }
     },
     "description": {

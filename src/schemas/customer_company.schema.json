@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/customer_company",
+  "$id": "https://schema.tes4a.org/schemas/customer_company",
   "title": "customer_company",
   "description": "customer_company",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/price",
+  "$id": "https://schema.tes4a.org/schemas/price",
   "title": "price",
   "description": "price",
   "type": "object",

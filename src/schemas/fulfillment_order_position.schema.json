@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/fulfillment_order_position",
+  "$id": "https://schema.tes4a.org/schemas/fulfillment_order_position",
   "title": "fulfillment_order_position",
   "description": "fulfillment_order_position",
   "type": "object",

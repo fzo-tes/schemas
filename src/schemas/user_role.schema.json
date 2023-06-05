@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/user_role",
+  "$id": "https://schema.tes4a.org/schemas/user_role",
   "title": "user_role",
   "description": "user_role",
   "type": "object",

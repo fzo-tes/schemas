@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/basket",
+  "$id": "https://schema.tes4a.org/schemas/basket",
   "title": "basket",
   "description": "basket",
   "type": "object",
@@ -22,7 +22,7 @@
     "positions": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/basket_position"
+        "$ref": "https://schema.tes4a.org/schemas/basket_position"
       }
     },
     "is_archived": {

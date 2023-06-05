@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/tracking_url",
+  "$id": "https://schema.tes4a.org/schemas/tracking_url",
   "title": "tracking_url",
   "description": "tracking_url",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/product_variant",
+  "$id": "https://schema.tes4a.org/schemas/product_variant",
   "title": "product_variant",
   "description": "product_variant",
   "type": "object",
@@ -47,7 +47,7 @@
     "images": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/image"
+        "$ref": "https://schema.tes4a.org/schemas/image"
       }
     },
     "option": {
@@ -90,7 +90,7 @@
     "prices": {
       "types": "array",
       "items": {
-        "$ref": "/schemas/price",
+        "$ref": "https://schema.tes4a.org/schemas/price",
         "type": "object",
         "properties": {
           "price_id": {

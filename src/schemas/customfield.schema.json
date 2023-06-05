@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/customfield",
+  "$id": "https://schema.tes4a.org/schemas/customfield",
   "title": "customfield",
   "description": "customfield",
   "type": "object",

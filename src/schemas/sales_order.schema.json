@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/sales_order",
+  "$id": "https://schema.tes4a.org/schemas/sales_order",
   "title": "sales_order",
   "description": "sales_order",
   "type": "object",
@@ -117,15 +117,15 @@
     },
     "merchant_address": {
       "type": "object",
-      "$ref": "/schemas/address"
+      "$ref": "https://schema.tes4a.org/schemas/address"
     },
     "shipping_address": {
       "type": "object",
-      "$ref": "/schemas/address"
+      "$ref": "https://schema.tes4a.org/schemas/address"
     },
     "invoice_address": {
       "type": "object",
-      "$ref": "/schemas/address"
+      "$ref": "https://schema.tes4a.org/schemas/address"
     },
     "payment": {
       "type": "object",
@@ -179,7 +179,7 @@
     "positions": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/sales_order_position"
+        "$ref": "https://schema.tes4a.org/schemas/sales_order_position"
       }
     },
     "discount": {

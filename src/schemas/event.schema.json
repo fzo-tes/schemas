@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/event",
+  "$id": "https://schema.tes4a.org/schemas/event",
   "title": "event",
   "description": "event",
   "type": "object",

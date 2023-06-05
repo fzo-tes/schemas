@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/setting_visitor",
+  "$id": "https://schema.tes4a.org/schemas/setting_visitor",
   "title": "setting_visitor",
   "description": "setting_visitor",
   "type": "object",

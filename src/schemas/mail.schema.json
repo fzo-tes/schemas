@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/mail",
+  "$id": "https://schema.tes4a.org/schemas/mail",
   "title": "mail",
   "description": "mail",
   "type": "object",

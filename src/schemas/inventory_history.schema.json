@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/inventory_history",
+  "$id": "https://schema.tes4a.org/schemas/inventory_history",
   "title": "inventory_history",
   "description": "inventory_history",
   "type": "object",

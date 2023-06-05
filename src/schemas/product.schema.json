@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/product",
+  "$id": "https://schema.tes4a.org/schemas/product",
   "title": "product",
   "description": "product",
   "type": "object",
@@ -28,7 +28,7 @@
     "images": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/image"
+        "$ref": "https://schema.tes4a.org/schemas/image"
       }
     },
     "description": {
@@ -65,7 +65,7 @@
     "collections": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/image"
+        "$ref": "https://schema.tes4a.org/schemas/image"
       }
     },
     "collection": {
@@ -74,7 +74,7 @@
     "variants": {
       "type": "array",
       "items": {
-        "$ref": "/schemas/product_variant"
+        "$ref": "https://schema.tes4a.org/schemas/product_variant"
       }
     },
     "customer_profile_reference": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/blog_article",
+  "$id": "https://schema.tes4a.org/schemas/blog_article",
   "title": "blog_article",
   "description": "blog_article",
   "type": "object",

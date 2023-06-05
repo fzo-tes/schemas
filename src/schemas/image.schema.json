@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/image",
+  "$id": "https://schema.tes4a.org/schemas/image",
   "title": "image",
   "description": "image",
   "type": "object",

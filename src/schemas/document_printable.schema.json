@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/document_printable",
+  "$id": "https://schema.tes4a.org/schemas/document_printable",
   "title": "document_printable",
   "description": "document_printable",
   "type": "object",

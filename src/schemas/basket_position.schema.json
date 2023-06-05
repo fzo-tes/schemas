@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft/2020-12/schema",
-  "$id": "/schemas/basket_position",
+  "$id": "https://schema.tes4a.org/schemas/basket_position",
   "title": "basket_position",
   "description": "basket_position",
   "type": "object",
