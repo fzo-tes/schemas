@@ -41,11 +41,11 @@
       },
       "shipping_address": {
         "type": "object",
-        "$ref": "https://schema.tes4a.org/schemas/address"
+        "$ref": "https://schema.tes4a.org/schemas/{%PREFIX%}address"
       },
       "shipping_address_org": {
         "type": "object",
-        "$ref": "https://schema.tes4a.org/schemas/address"
+        "$ref": "https://schema.tes4a.org/schemas/{%PREFIX%}address"
       },
       "last_label_creation_error": {
         "type": "string"
