@@ -62,13 +62,13 @@
     "product_type": {
       "type": "string"
     },
-    "collections": {
+    "categories": {
       "type": "array",
       "items": {
         "$ref": "https://schema.tes4a.org/schemas/{%PREFIX%}image"
       }
     },
-    "collection": {
+    "category": {
       "type": "string"
     },
     "variants": {
