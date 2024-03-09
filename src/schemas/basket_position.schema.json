@@ -48,7 +48,7 @@
         "image_url": {
           "type": "string"
         },
-        "required_shipment": {
+        "shipment_required": {
           "type": "boolean",
           "default": false
         },

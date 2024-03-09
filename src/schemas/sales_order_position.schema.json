@@ -40,7 +40,7 @@
     "weight_unit": {
       "type": "string"
     },
-    "required_shipment": {
+    "shipment_required": {
       "type": "boolean",
       "default": false
     },

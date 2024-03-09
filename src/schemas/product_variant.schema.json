@@ -34,7 +34,7 @@
     "fulfillment_service": {
       "type": "string"
     },
-    "requires_shipping": {
+    "shipment_required": {
       "type": "boolean",
       "default": false
     },
