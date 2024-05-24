@@ -1,5 +1,5 @@
 {
-  "$id": "/bo_defaults/malin",
+  "$id": "/tes4a/base/malin",
   "title": "malin",
   "description": "Malin",
   "type": "object",
@@ -11,13 +11,15 @@
       "type": "string"
     },
     "created_at": {
-      "type": "date-time"
+      "type": "string",
+      "format": "date-time"
     },
     "created_by": {
       "type": "string"
     },
     "lastupdate_at": {
-      "type": "date-time"
+      "type": "string",
+      "format": "date-time"
     },
     "lastupdate_by": {
       "type": "string"
@@ -37,7 +39,10 @@
       "type": "object"
     },
     "tags": {
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   }
 }

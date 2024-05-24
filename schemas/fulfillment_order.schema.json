@@ -33,7 +33,8 @@
           "type": "string"
         },
         "shipped_at": {
-          "type": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
         "shipped_by_scanstation_id": {
           "type": "string"

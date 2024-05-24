@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/tes4a/schemas/action",
+  "title": "action",
+  "description": "Action",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "/tes4a/base/malin"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

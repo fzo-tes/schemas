@@ -29,7 +29,8 @@
       "type": "number"
     },
     "reference_created_at": {
-      "type": "date-time"
+      "type": "string",
+      "format": "date-time"
     }
   }
 }
