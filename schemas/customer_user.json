@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/customer_user",
+  "title": "customer_user",
+  "description": "customer_user",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "customer_company_id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array",
+          "items": {
+            "$ref": "customer_profile.json"
+          }
+        },
+        "last_profile_id": {
+          "type": "string"
+        },
+        "language_code": {
+          "type": "string"
+        },
+        "is_admin": {
+          "type": "boolean",
+          "default": false
+        },
+        "is_test": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/event",
+  "title": "event",
+  "description": "event",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

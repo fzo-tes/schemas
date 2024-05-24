@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/inventory_history",
+  "title": "inventory_history",
+  "description": "inventory_history",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "inventory_id": {
+          "type": "string"
+        },
+        "product_id": {
+          "type": "string"
+        },
+        "product_variant_id": {
+          "type": "string"
+        },
+        "stock_type": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number"
+        }
+      }
+    }
+  ]
+}

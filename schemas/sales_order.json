@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/sales_order",
+  "title": "sales_order",
+  "description": "sales_order",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "$defs": {
+    "customer_information": {
+      "type": "object",
+      "properties": {
+        "customer_company_id": {
+          "type": "string"
+        },
+        "customer_profile_id": {
+          "type": "string"
+        },
+        "customer_user_id": {
+          "type": "string"
+        },
+        "customer_company": {
+          "type": "object",
+          "properties": {
+            "no": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "customer_profile": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "image_logo": {
+              "type": "string"
+            },
+            "customfields": {
+              "type": "object"
+            }
+          }
+        },
+        "customer_user": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "firstname": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "customfields": {
+              "type": "object"
+            }
+          }
+        },
+        "language_code": {
+          "type": "string"
+        },
+        "customfields": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "no": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "parent_sale_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "source_reference_id": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "object",
+          "properties": {
+            "currency_id": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "exchangerate": {
+              "type": "number"
+            }
+          }
+        },
+        "buyer": {
+          "type": "object",
+          "$ref": "#/$defs/customer_information"
+        },
+        "seller": {
+          "type": "object",
+          "$ref": "#/$defs/customer_information"
+        },
+        "merchant": {
+          "type": "object",
+          "$ref": "#/$defs/customer_information"
+        },
+        "merchant_address": {
+          "type": "object",
+          "$ref": "address.json"
+        },
+        "shipping_address": {
+          "type": "object",
+          "$ref": "address.json"
+        },
+        "invoice_address": {
+          "type": "object",
+          "$ref": "address.json"
+        },
+        "payment": {
+          "type": "object",
+          "properties": {
+            "payment_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "provider_code": {
+              "type": "string"
+            },
+            "reference_id": {
+              "type": "string"
+            },
+            "reference_token": {
+              "type": "string"
+            },
+            "reference_payerid": {
+              "type": "string"
+            },
+            "reference_status": {
+              "type": "string"
+            },
+            "reference_field1": {
+              "type": "string"
+            },
+            "reference_field2": {
+              "type": "string"
+            },
+            "reference_field3": {
+              "type": "string"
+            }
+          }
+        },
+        "shipping": {
+          "type": "object",
+          "properties": {
+            "supplier_id": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "positions": {
+          "type": "array",
+          "items": {
+            "$ref": "sales_order_position.json"
+          }
+        },
+        "discount": {
+          "type": "object",
+          "properties": {
+            "discount_id": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          }
+        },
+        "price": {
+          "type": "object",
+          "properties": {
+            "purchasing": {
+              "type": "number"
+            },
+            "selling": {
+              "type": "number"
+            },
+            "retail": {
+              "type": "number"
+            },
+            "discount": {
+              "type": "number"
+            },
+            "shipping": {
+              "type": "number"
+            },
+            "vat": {
+              "type": "number"
+            },
+            "total__vat": {
+              "type": "number"
+            },
+            "total__gross": {
+              "type": "number"
+            },
+            "total__net": {
+              "type": "number"
+            }
+          }
+        },
+        "is_test": {
+          "type": "boolean",
+          "default": false
+        },
+        "is_archived": {
+          "type": "boolean",
+          "default": false
+        },
+        "packing_material": {
+          "type": "object",
+          "properties": {
+            "package_id": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "packing_material_type": {
+              "type": "string"
+            }
+          }
+        },
+        "customs": {
+          "type": "object",
+          "properties": {
+            "invoice_no": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "place_of_commital": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

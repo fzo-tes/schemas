@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/deed",
+  "title": "deed",
+  "description": "deed",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "org_path": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

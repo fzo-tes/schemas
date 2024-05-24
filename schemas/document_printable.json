@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/document_printable",
+  "title": "document_printable",
+  "description": "document_printable",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "printer": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "client_target": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string"
+        },
+        "printed": {
+          "type": "boolean",
+          "default": false
+        },
+        "printed_at": {
+          "type": "string"
+        },
+        "delete_at": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

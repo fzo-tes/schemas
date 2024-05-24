@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/customfield",
+  "title": "customfield",
+  "description": "customfield",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "object_type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "is_active": {
+          "type": "boolean",
+          "default": true
+        },
+        "is_system": {
+          "type": "boolean",
+          "default": false
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string"
+        },
+        "field_type": {
+          "type": "string"
+        },
+        "field_type_value": {
+          "type": "string"
+        },
+        "can_have_multiple_values": {
+          "type": "boolean",
+          "default": false
+        },
+        "value_structure": {
+          "type": "array"
+        },
+        "values": {
+          "type": "array"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/mail_template",
+  "title": "mail_template",
+  "description": "mail_template",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "sender": {
+          "type": "string"
+        },
+        "recipients": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recipients_copy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recipients_blindcopy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reply_to": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "attachments_static": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "content": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

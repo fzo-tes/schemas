@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/tracking_url",
+  "title": "tracking_url",
+  "description": "tracking_url",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "short": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "subcode": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

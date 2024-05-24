@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/fulfillment_scanstation_printer",
+  "title": "fulfillment_scanstation_printer",
+  "description": "fulfillment_scanstation_printer",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "label_small": {
+          "type": "string"
+        },
+        "invoice": {
+          "type": "string"
+        },
+        "deliverynote": {
+          "type": "string"
+        },
+        "exportdocument": {
+          "type": "string"
+        },
+        "label_address": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

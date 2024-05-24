@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/basket",
+  "title": "basket",
+  "description": "basket",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "reference_id": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "basket_type": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "positions": {
+          "type": "array",
+          "items": {
+            "$ref": "basket_position.json"
+          }
+        },
+        "is_archived": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
+}

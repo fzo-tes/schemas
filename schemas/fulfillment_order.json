@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/fulfillment_order",
+  "title": "fulfillment_order",
+  "description": "fulfillment_order",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "is_shipped": {
+          "type": "boolean",
+          "default": false
+        },
+        "is_archived": {
+          "type": "boolean",
+          "default": false
+        },
+        "shipment": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "deliveryprovider": {
+              "type": "string"
+            },
+            "tracking_no": {
+              "type": "string"
+            },
+            "shipped_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "shipped_by_scanstation_id": {
+              "type": "string"
+            }
+          },
+          "shipping_address": {
+            "type": "object",
+            "$ref": "address.json"
+          },
+          "shipping_address_org": {
+            "type": "object",
+            "$ref": "address.json"
+          },
+          "last_label_creation_error": {
+            "type": "string"
+          },
+          "documents": {
+            "type": "array"
+          },
+          "packing_material": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "package_id": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number"
+              },
+              "packing_material_type": {
+                "type": "string"
+              }
+            }
+          },
+          "customs": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "invoice_no": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "place_of_commital": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

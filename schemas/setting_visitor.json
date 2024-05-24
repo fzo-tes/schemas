@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/setting_visitor",
+  "title": "setting_visitor",
+  "description": "setting_visitor",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "reference_id": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "show_price_net": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
+}

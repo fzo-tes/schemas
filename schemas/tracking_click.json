@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/tracking_click",
+  "title": "tracking_click",
+  "description": "tracking_click",
+  "type": "object",
+  "required": [],
+  "unique": [],
+  "allOf": [
+    {
+      "$ref": "base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "code1": {
+          "type": "string"
+        },
+        "code2": {
+          "type": "string"
+        },
+        "code3": {
+          "type": "string"
+        },
+        "code4": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string"
+        },
+        "reference_type": {
+          "type": "string"
+        },
+        "reference_value": {
+          "type": "number"
+        },
+        "reference_created_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  ]
+}
