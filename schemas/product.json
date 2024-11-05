@@ -8,7 +8,7 @@
   "unique": [],
   "allOf": [
     {
-      "$ref": "base.json"
+      "$ref": "./base.json"
     },
     {
       "type": "object",
@@ -34,7 +34,7 @@
         "images": {
           "type": "array",
           "items": {
-            "$ref": "image.json"
+            "$ref": "./image.json"
           }
         },
         "description": {
@@ -71,7 +71,7 @@
         "categories": {
           "type": "array",
           "items": {
-            "$ref": "image.json"
+            "$ref": "./image.json"
           }
         },
         "category": {
@@ -80,7 +80,7 @@
         "variants": {
           "type": "array",
           "items": {
-            "$ref": "product_variant.json"
+            "$ref": "./product_variant.json"
           }
         },
         "customer_profile_reference": {

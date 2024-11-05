@@ -8,7 +8,7 @@
   "unique": [],
   "allOf": [
     {
-      "$ref": "base.json"
+      "$ref": "./base.json"
     },
     {
       "type": "object",
@@ -28,7 +28,7 @@
         "positions": {
           "type": "array",
           "items": {
-            "$ref": "basket_position.json"
+            "$ref": "./basket_position.json"
           }
         },
         "is_archived": {

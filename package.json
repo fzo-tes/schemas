@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ts": "tsc && node .build/generate_ts.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "json-schema-to-typescript": "^14.0.4",
+    "quicktype": "^23.0.168",
+    "typescript": "^5.4.5"
+  }
 }

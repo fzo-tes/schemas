@@ -8,7 +8,7 @@
   "unique": [],
   "allOf": [
     {
-      "$ref": "base.json"
+      "$ref": "./base.json"
     },
     {
       "type": "object",
@@ -34,7 +34,7 @@
         "addresses": {
           "type": "array",
           "items": {
-            "$ref": "address.json"
+            "$ref": "./address.json"
           }
         },
         "description": {

@@ -8,7 +8,7 @@
   "unique": [],
   "allOf": [
     {
-      "$ref": "base.json"
+      "$ref": "./base.json"
     },
     {
       "type": "object",
@@ -53,7 +53,7 @@
         "images": {
           "type": "array",
           "items": {
-            "$ref": "image.json"
+            "$ref": "./image.json"
           }
         },
         "option": {
@@ -96,7 +96,7 @@
         "prices": {
           "types": "array",
           "items": {
-            "$ref": "price.json",
+            "$ref": "./price.json",
             "type": "object",
             "properties": {
               "price_id": {

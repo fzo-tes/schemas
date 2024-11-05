@@ -72,7 +72,7 @@
   },
   "allOf": [
     {
-      "$ref": "base.json"
+      "$ref": "./base.json"
     },
     {
       "type": "object",
@@ -123,15 +123,15 @@
         },
         "merchant_address": {
           "type": "object",
-          "$ref": "address.json"
+          "$ref": "./address.json"
         },
         "shipping_address": {
           "type": "object",
-          "$ref": "address.json"
+          "$ref": "./address.json"
         },
         "invoice_address": {
           "type": "object",
-          "$ref": "address.json"
+          "$ref": "./address.json"
         },
         "payment": {
           "type": "object",
@@ -185,7 +185,7 @@
         "positions": {
           "type": "array",
           "items": {
-            "$ref": "sales_order_position.json"
+            "$ref": "./sales_order_position.json"
           }
         },
         "discount": {
